@@ -30,7 +30,7 @@ public class BaseController {
 	public String welcomeName(@PathVariable String name, ModelMap model) {
 
 		model.addAttribute("message", "Welcome " + name);
-		model.addAttribute("counter", ++counter);
+		model.addAttribute("counter", counter+5);
 		logger.debug("[welcomeName] counter : {}", counter);
 		return VIEW_INDEX;
 
